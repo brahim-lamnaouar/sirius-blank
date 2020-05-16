@@ -12,6 +12,10 @@ help: ## Show this help manual
 dev: ## Lance le serveur de développement
 	$(php) -S 0.0.0.0:8000 -t public -d display_errors=1
 
+.PHONY: node
+node: ## Launch NodeJS dev server
+	npm run dev
+
 .PHONY: clean
 clean: ## Clean containers
 	$(dc) -f docker-compose.yml down --volumes
