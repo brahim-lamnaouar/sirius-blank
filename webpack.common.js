@@ -1,8 +1,7 @@
-const outputPath = 'public/assets'
-const path = require('path')
 const WebpackAssetsManifest = require('webpack-assets-manifest')
 const webpack = require('webpack')
 const {isProduction} = require('webpack-mode')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CSSLoader = () => {
@@ -33,11 +32,8 @@ module.exports = {
     entry: {
         main: ['./assets/js/main.js', './assets/scss/main.scss']
     },
-    output: {
-        path: path.resolve(__dirname, outputPath),
-        filename: '[name].bundle.js',
-    },
     plugins: [
+        new CleanWebpackPlugin(),
         new WebpackAssetsManifest({
             writeToDisk: true,
             publicPath: true

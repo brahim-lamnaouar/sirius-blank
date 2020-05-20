@@ -1,7 +1,15 @@
+const outputPath = 'public/assets'
+const path = require('path')
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
+
 module.exports = merge(common, {
+    output: {
+        path: path.resolve(__dirname, outputPath),
+        publicPath: 'http://localhost:3000/',
+        filename: '[name].js',
+    },
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
