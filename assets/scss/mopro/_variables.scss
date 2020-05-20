@@ -1,10 +1,27 @@
 // =============================================================================
 // Colors
 // =============================================================================
-$primary-color: #009DE0 !default;
-$secondary-color: #28CB75 !default;
-$dark-color: #333 !default;
-$light-color: #f9f9f9 !default;
+$color-primary: #009DE0 !default;
+$color-secondary: #2bb97f  !default;
+$color-soft-dark: rgba(0, 0, 0, .5) !default;
+$color-dark: #333 !default;
+$color-dark-2: #555 !default;
+$color-light: #f9f9f9 !default;
+$grey-color: #eee !default;
+$color-green: #26a69a !default;
+$color-red: #c91919 !default;
+
+// =============================================================================
+// Screen
+// =============================================================================
+$media-laptop: 1280px;
+$media-tablet: 992px;
+$media-phone: 600px;
+
+// =============================================================================
+// Navbar
+// =============================================================================
+$navbar-height: 64px;
 
 // =============================================================================
 // Material Icons

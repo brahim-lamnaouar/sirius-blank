@@ -1,0 +1,107 @@
+// =============================================================================
+// Navbar
+// =============================================================================
+.main-nav{
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: none;
+  transition: transform .2s, background .2s;
+  transform: translateY(0);
+  z-index: 10;
+  .sidenav-trigger {
+    color: $color-light;
+  }
+  .nav-logo{
+    display: none;
+    height: 70%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    @include media-query-min($media-phone) {
+      padding-left: 20px;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+  }
+}
+// =============================================================================
+// Dropdown
+// =============================================================================
+.dropdown-content {
+  li a {
+    color: $color-dark-2;
+    &:hover{
+      color: $color-dark;
+    }
+  }
+}
+
+// =============================================================================
+// Sidenav
+// =============================================================================
+.sidenav{
+  padding-top: 110px;
+  padding-bottom: 0;
+  height: 100vh;
+  .nav-logo{
+    width: 55%;
+    left: 50%;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  a:hover{
+    color: $color-primary;
+  }
+}
+// =============================================================================
+// Fixed Navbar
+// =============================================================================
+.fixed-nav{
+  position: fixed;
+  top: -$navbar-height;
+  transform: translateY($navbar-height);
+  background: $color-light;
+  box-shadow: 1px 1px 5px $color-soft-dark;
+
+  ul a, .sidenav-trigger {
+    color: $color-dark-2;
+  }
+
+  .nav-logo {
+    display: block;
+  }
+
+
+}
+// =============================================================================
+// Parallax
+// =============================================================================
+.parallax-container{
+  height: 500px;
+  &.with-nav{
+    padding-top: 90px;
+  }
+}
+
+// =============================================================================
+// Carousel
+// =============================================================================
+.bg-darken{
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: $color-soft-dark;
+  }
+}
+

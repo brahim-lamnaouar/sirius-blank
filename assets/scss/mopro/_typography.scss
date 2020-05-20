@@ -10,6 +10,8 @@ $f-roboto-mono: "Roboto Mono", sans-serif;
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Light", 200, null, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-ThinItalic", 100, italic, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Thin", 100, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-BoldItalic", 800, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Bold", 800, null, ttf)
 
 // =============================================================================
 // Titles
@@ -18,7 +20,7 @@ h1, h2, h3{
   font-family: $f-roboto-mono;
   font-weight: 600;
   font-style: normal;
-  color: $dark-color;
+  color: $color-dark;
 }
 h1 {font-size: 36px;}
 h2 {font-size: 30px;}
@@ -47,7 +49,7 @@ html, body{
     right: -5px;
     left: -5px;
     bottom: 0;
-    background: $primary-color;
+    background: $color-primary;
     opacity: 0.5;
     z-index: -1;
   }
@@ -58,5 +60,5 @@ html, body{
 // =============================================================================
 a{
   font-style: normal;
-  font-weight: 600 !important;
+  font-weight: 600;
 }

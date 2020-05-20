@@ -42,3 +42,14 @@
     src: $src;
   }
 }
+
+// =============================================================================
+// Media Queries
+// =============================================================================
+@mixin media-query-max($width) {
+  @media (max-width: $width) { @content; }
+}
+
+@mixin media-query-min($width) {
+  @media (min-width: $width + 1) { @content; }
+}

@@ -1,0 +1,25 @@
+// =============================================================================
+// Basics
+// =============================================================================
+ul {
+  a{
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    transition: color .2s, background .2s !important;
+  }
+}
+// =============================================================================
+// Links
+// =============================================================================
+.link-red{
+  color: $color-red !important;
+}
+.link-red-on-hover:hover{
+  color: $color-red !important;
+}
+.link-primary{
+  color: $color-primary !important;
+}
+.link-red-on-hover:hover{
+  color: $color-red !important;
+}
