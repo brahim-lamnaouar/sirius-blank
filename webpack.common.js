@@ -4,8 +4,6 @@ const WebpackAssetsManifest = require('webpack-assets-manifest')
 const webpack = require('webpack')
 const {isProduction} = require('webpack-mode')
 
-console.log(isProduction)
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CSSLoader = () => {
     const postCSSPlugins = [require('css-mqpacker')()]
@@ -35,29 +33,25 @@ module.exports = {
     entry: {
         main: ['./assets/js/main.js', './assets/scss/main.scss']
     },
-
     output: {
         path: path.resolve(__dirname, outputPath),
-        publicPath: isProduction ? './' : 'http://localhost:3000/',
-        filename: isProduction ? '[name].[hash].js' : '[name].js',
+        filename: '[name].bundle.js',
     },
-
-    devServer: {
-        port: 3000,
-        host: '0.0.0.0',
-        hot: true,
-        publicPath: 'http://localhost:3000/',
-        stats: 'minimal',
-        //watchContentBase: true,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-        }
-    },
-    devtool: 'source-map',
-    stats: 'minimal',
-
+    plugins: [
+        new WebpackAssetsManifest({
+            writeToDisk: true,
+            publicPath: true
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+        })
+    ],
     module: {
         rules: [
             {
@@ -79,22 +73,4 @@ module.exports = {
             CSSLoader(),
         ]
     },
-
-    plugins: [
-        new WebpackAssetsManifest({
-            writeToDisk: true,
-            publicPath: true
-        }),
-        new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css'
-        }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-        })
-
-    ]
-
-}
+};

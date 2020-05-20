@@ -5,3 +5,5 @@ public/assets/
 composer.lock
 yarn.lock
 yarn-error.log
+package-lock.json
+

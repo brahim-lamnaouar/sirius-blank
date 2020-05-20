@@ -3,6 +3,7 @@ group := $(shell id -g)
 
 dc := USER_ID=$(user) GROUP_ID=$(group) docker-compose
 php := $(dc) run --rm -w /var/www -p 8000:8000 php php
+npm := $(dc) run --rm -w /usr/src/app -p 8080:8080 node npm
 
 .PHONY: help
 help: ## Show this help manual
