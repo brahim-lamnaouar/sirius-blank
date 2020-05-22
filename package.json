@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --config webpack.dev.js --mode=development",
+    "dev": "webpack-dev-server --config webpack.dev.js --mode=development",
     "prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "repository": "https://github.com/brahim-lamnaouar/sirius-blank",
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "font-awesome": "^4.7.0",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "bootstrap": "^4.5.0",
@@ -26,6 +27,7 @@
     "jquery": "^3.5.1",
     "material-icons": "^0.3.1",
     "materialize-css": "^1.0.0-rc.2",
+    "materialize-social": "^1.0.3",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",

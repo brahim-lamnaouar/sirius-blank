@@ -1,22 +1,22 @@
 // =============================================================================
 // Colors
 // =============================================================================
-$color-primary: #009DE0 !default;
-$color-secondary: #2bb97f  !default;
-$color-soft-dark: rgba(0, 0, 0, .5) !default;
-$color-dark: #333 !default;
-$color-dark-2: #555 !default;
-$color-light: #f9f9f9 !default;
-$grey-color: #eee !default;
-$color-green: #26a69a !default;
-$color-red: #c91919 !default;
+$color-primary:     #009DE0 !default;
+$color-secondary:   #2bb97f  !default;
+$color-soft-dark:   rgba(0, 0, 0, .5) !default;
+$color-dark:        #333 !default;
+$color-dark-2:      #555 !default;
+$color-light:       #f9f9f9 !default;
+$color-grey:        #eee !default;
+$color-green:       #26a69a !default;
+$color-red:         #c91919 !default;
 
 // =============================================================================
 // Screen
 // =============================================================================
-$media-laptop: 1280px;
-$media-tablet: 992px;
-$media-phone: 600px;
+$media-laptop:  1280px;
+$media-tablet:  992px;
+$media-phone:   600px;
 
 // =============================================================================
 // Navbar
@@ -24,6 +24,7 @@ $media-phone: 600px;
 $navbar-height: 64px;
 
 // =============================================================================
-// Material Icons
+// Icons
 // =============================================================================
-$material-icons-font-path: '~material-icons/iconfont/';
+$material-icons-font-path:  '~material-icons/iconfont/';
+$fa-font-path:              "~font-awesome/fonts" !default;

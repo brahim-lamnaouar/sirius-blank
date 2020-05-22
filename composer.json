@@ -1,0 +1,10 @@
+{
+    "name": "ibra/web",
+    "authors": [
+        {
+            "name": "Brahim Lamnaouar",
+            "email": "brahim_lamnaouar@um5.ac.ma"
+        }
+    ],
+    "require": {}
+}

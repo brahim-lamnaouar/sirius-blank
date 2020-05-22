@@ -104,6 +104,7 @@
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur consectetur dolorum facilis, officiis quae sequi unde! Assumenda distinctio expedita facere fugit ipsa iusto mollitia nihil placeat sed tenetur?</div>
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur consectetur dolorum facilis, officiis quae sequi unde! Assumenda distinctio expedita facere fugit ipsa iusto mollitia nihil placeat sed tenetur?</div>
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur consectetur dolorum facilis, officiis quae sequi unde! Assumenda distinctio expedita facere fugit ipsa iusto mollitia nihil placeat sed tenetur? </div>
+<?php include 'footer.php';?>
 </body>
 <script src="<?= json_path('main.js') ?>"></script>
 </html>
