@@ -16,15 +16,17 @@ $f-roboto-mono: "Roboto Mono", sans-serif;
 // =============================================================================
 // Titles
 // =============================================================================
-h1, h2, h3, .h1, .h2, .h3{
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, h5, .h5{
   font-family: $f-roboto-mono;
   font-weight: 600;
   font-style: normal;
   color: $color-dark;
 }
-h1, .h1 {font-size: 36px;}
-h2, .h2 {font-size: 30px;}
-h3, .h3 {font-size: 24px;}
+h1, .h1 {font-size: 30px;}
+h2, .h2 {font-size: 24px;}
+h3, .h3 {font-size: 20px;}
+h4, .h4 {font-size: 18px;}
+h5, .h5 {font-size: 16px;}
 
 // =============================================================================
 // Basics
@@ -72,3 +74,12 @@ a{
   font-style: normal;
   font-weight: 600;
 }
+
+// =============================================================================
+// TEXT
+// =============================================================================
+.text-thin {font-weight: 100;}
+.text-light {font-weight: 200;}
+.text-regular {font-weight: 400;}
+.text-medium {font-weight: 600;}
+.text-bold {font-weight: 800;}

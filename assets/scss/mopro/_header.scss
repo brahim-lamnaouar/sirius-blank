@@ -16,7 +16,7 @@
   }
   .nav-logo{
     display: none;
-    height: 70%;
+    height: 40%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -24,8 +24,22 @@
     padding-right: 10px;
     @include media-query-min($media-phone) {
       padding-left: 20px;
-      margin-left: 10px;
-      margin-right: 20px;
+      padding-right: 20px;
+    }
+  }
+  .right{
+    margin: 0 20px;
+
+    .btn {
+      border-radius: 2rem;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .btn-login {
+      background: $color-primary;
+    }
+    .btn-register{
+      background: $color-secondary;
     }
   }
 }
@@ -49,10 +63,10 @@
   padding-bottom: 0;
   height: 100vh;
   .nav-logo{
-    width: 55%;
+    width: 40%;
     left: 50%;
     top: 0;
-    margin: auto;
+    margin: 30px auto;
     position: absolute;
     transform: translateX(-50%);
   }
