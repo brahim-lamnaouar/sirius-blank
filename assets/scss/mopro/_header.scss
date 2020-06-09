@@ -30,7 +30,7 @@
   .right{
     margin: 0 20px;
 
-    .btn {
+    .btn-register, .btn-login {
       border-radius: 2rem;
       font-size: 13px;
       font-weight: 800;
@@ -41,6 +41,18 @@
     .btn-register{
       background: $color-secondary;
     }
+
+    &.member {
+      img {
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $color-primary;
+        border-radius: 50%;
+      }
+    }
+
   }
 }
 // =============================================================================
@@ -98,7 +110,9 @@
 // Parallax
 // =============================================================================
 .parallax-container{
-  height: 500px;
+  height: 664px;
+  @include media-query-max($media-tablet) {height: 560px;}
+
   &.with-nav{
     padding-top: 90px;
   }
@@ -119,3 +133,20 @@
   }
 }
 
+// =============================================================================
+// Laptop banner
+// =============================================================================
+.home-laptop-banner {
+  width: 500px;
+  margin: -248px auto 20px;
+
+  @include media-query-max($media-tablet) {
+    width: 400px;
+    margin-top: -198px;
+  }
+
+  img {
+    width: 100%;
+
+  }
+}

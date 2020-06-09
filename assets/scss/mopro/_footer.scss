@@ -5,7 +5,8 @@ $social-link-size: 35px;
 
 .footer {
   background:#666;
-  overflow:visible;margin-top: 150px;
+  overflow:visible;
+  margin-top: 40px;
   padding: 60px 60px 20px;
   font-family: $f-roboto-mono;
   font-weight: 400;
@@ -64,6 +65,7 @@ $social-link-size: 35px;
     padding-right:25px;
     @include media-query-max($media-tablet) {
       margin-top: 25px;
+      margin-bottom: 15px;
     }
 
     .small-logo {
@@ -101,22 +103,12 @@ $social-link-size: 35px;
     display: inline-table;
 
     a {
-      color: $color-light;
+      color: $color-grey-2;
       font-size: 15px !important;
       display: inline-block;
-      padding-top: 6px;
-      padding-left: 1px;
-      text-align: center;
-      height: $social-link-size;
-      width: $social-link-size;
-      position: relative;
-      z-index: 1;
-      transition: background 0.15s;
-      border-radius: 50%;
-      background: $color-dark;
-
+      padding: 10px;
       &:hover{
-        background: $color-primary-dark;
+        color: $color-white;
       }
     }
   }

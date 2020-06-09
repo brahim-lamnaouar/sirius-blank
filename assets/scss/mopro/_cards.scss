@@ -1,0 +1,125 @@
+// =============================================================================
+// Serviecs
+// =============================================================================
+
+section {
+  margin-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.banner {
+
+  .service {
+    margin-bottom: 35px;
+
+    .icon {
+      margin-top: 25px;
+      height: 55px;
+      @include media-query-max($media-phone) {float:left;height: 100px; width: 100px;
+        margin-right: 20px;}
+      img {
+        max-height: 55px;
+        @include media-query-max($media-phone) {margin-top: 10px;max-height: 80px; width: 100px;}
+      }
+    }
+    .title{
+      margin-top: 25px;
+      margin-bottom: 5px;
+      font-size: 1.2rem;
+      color: $color-dark;
+
+      &.big{
+        font-size: 2.5rem;
+        line-height: 55px;
+        margin-bottom: 25px;
+      }
+    }
+    .content{
+      margin-top: 0;
+      color: $color-light-2;
+      font-weight: $f-regular;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+  }
+}
+
+.price-table {
+  .row{
+    @include media-query-min($media-tablet) {display: none;}
+  }
+  .col {
+    margin-bottom: 50px !important;
+    @include media-query-max($media-custom) {width: 100% !important;}
+  }
+  .pricing-table {
+    box-shadow: 2px 3px 10px $color-soft-dark;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    &.table-large{margin-bottom: 60px;@include media-query-max($media-tablet) {display: none;}}
+    &.table-small {
+      width: 95%;
+    }
+
+
+
+    tr{
+      td, th {
+        text-align: center;
+        &:first-child {
+          text-align: left;
+        }
+
+      }
+    }
+
+
+    thead{
+
+      tr th{
+        padding: 30px;
+        font-size: 1.2rem;
+        color: $color-dark;
+      }
+      &.price-tag tr th{
+        font-size: 1rem;
+      }
+    }
+
+    tbody tr td{
+      padding: 20px 30px;
+      color: $color-light-2;
+
+      .check{
+        width: 24px;
+        height: 24px;
+
+      }
+    }
+  }
+  thead th, tbody td{
+    border-radius: 0;
+  }
+  .table-small{
+    thead:first-child th {
+      border-radius: 10px 10px 0 0;
+    }
+    tbody:last-child td {
+      border-radius:  0 0 10px 10px;
+    }
+  }
+
+
+
+  tr td:nth-child(3), tr th:nth-child(3), .pricing-premium tr td, .pricing-premium tr th {
+    background: $color-primary-dark;
+    color: $color-grey !important;
+  }
+  tr:nth-child(2n+1) td:nth-child(3), .pricing-premium tr:nth-child(2n+1) td{
+      background: $color-primary;
+  }
+
+
+}

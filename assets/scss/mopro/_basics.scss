@@ -8,18 +8,19 @@ ul {
     transition: color .2s, background .2s;
   }
 }
+
 // =============================================================================
-// Links
+// Backgound
 // =============================================================================
-.link-red{
-  color: $color-red !important;
-}
-.link-red-on-hover:hover{
-  color: $color-red !important;
-}
-.link-primary{
-  color: $color-primary !important;
-}
-.link-red-on-hover:hover{
-  color: $color-red !important;
-}
+.bg-primary {background: $color-primary !important;}
+.bg-secondary {background: $color-secondary !important;}
+.bg-white {background: $color-light !important;}
+.bg-dark {background: $color-dark !important;}
+.bg-danger {background: $color-danger !important;}
+.bg-purple {background: $color-purple !important;}
+.bg-blue {background: $color-blue !important;}
+.bg-pink {background: $color-pink !important;}
+.bg-green {background: $color-green !important;}
+.bg-orange {background: $color-orange !important;}
+.bg-grey {background: $color-grey !important;}
+

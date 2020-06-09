@@ -4,9 +4,13 @@
 @import "~font-awesome/scss/font-awesome";
 @import '~material-icons/iconfont/material-icons';
 @import "~materialize-css";
+@import "~wow.js/css/libs/animate.css";
 @import "mopro/theme";
 
+@import "mopro/animejs";
 @import "mopro/typography";
 @import "mopro/basics";
+@import "mopro/buttons";
 @import "mopro/header";
+@import "mopro/cards";
 @import "mopro/footer";

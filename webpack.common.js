@@ -46,6 +46,8 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
+            anime: 'animejs',
+            WOW: 'wow.js'
         })
     ],
     module: {

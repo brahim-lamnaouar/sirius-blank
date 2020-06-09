@@ -1,0 +1,211 @@
+// =============================================================================
+// Links
+// =============================================================================
+.button-moving-line {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration:none;
+  font-size:1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    rect {
+      //stroke: #EC0033;
+      stroke-width: 3;
+      stroke-dasharray: 353, 0;
+      stroke-dashoffset: 0;
+      -webkit-transition: all 600ms ease;
+      transition: all 600ms ease;
+    }
+  }
+  &:hover svg rect {
+    stroke-dasharray: 124px, 279px;
+    stroke-dashoffset: 211px;
+  }
+  span{
+    background: rgb(255,130,130);
+    background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+    background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &.button-light span{
+    background: $color-dark;
+    background: linear-gradient(to right,  $color-light 0%,$color-grey 100%);
+    background: -webkit-linear-gradient(to right,  $color-light 0%,$color-grey 100%);
+    background: -moz-linear-gradient(to right,  $color-light 0%,$color-grey 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eee',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.button-border {
+  position: relative;
+  padding: .8em 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  font-weight: $f-regular;
+  margin: .5em 0;
+  color: $color-primary;
+
+  &.type2 {
+    &:after, &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-primary;
+      transition: all 0.3s ease;
+      transform: scale(0.85);
+    }
+    &:hover:before {
+      top: 0;
+      transform: scale(1);
+    }
+    &:hover:after {
+      transform: scale(1);
+    }
+  }
+
+  &.type1::after, &.type1::before, &.type3::after, &.type3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+  }
+
+  &.type1::after, &.type3::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: $color-primary;
+    border-right-color: $color-primary;
+  }
+
+
+  &.type1 {
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: $color-primary;
+      border-left-color: $color-primary;
+    }
+    &:hover:after, &:hover:before {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.type3 {
+    &::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: $color-primary;
+      border-left-color: $color-primary;
+    }
+    &:hover:after, &:hover:before {
+      border-bottom-color: $color-primary;
+      border-right-color: $color-primary;
+      border-top-color: $color-primary;
+      border-left-color: $color-primary;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.type4 {
+    color: $color-danger;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 0;
+      left: 0;
+      background-color: $color-danger;
+      transition: width 0.3s ease-in-out;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &:hover::after {
+      width: 50px;
+    }
+  }
+
+  &.button-secondary{
+    color: $color-secondary;
+    &:after, &:before { background-color: $color-secondary;}
+  }
+  &.button-pink{
+    color: $color-pink;
+    &:after, &:before { background-color: $color-pink;}
+  }
+  &.button-danger{
+    color: $color-danger;
+    &:after, &:before { background-color: $color-danger;}
+  }
+  &.button-purple{
+    color: $color-purple;
+    &:after, &:before { background-color: $color-purple;}
+  }
+  &.button-orange{
+    color: $color-orange;
+    &:after, &:before { background-color: $color-orange;}
+  }
+  &.button-dark{
+    color: $color-dark;
+    &:after, &:before { background-color: $color-dark;}
+  }
+  &.button-blue{
+    color: $color-blue;
+    &:after, &:before { background-color: $color-blue;}
+  }
+  &.button-light{
+    color: $color-light;
+    &:after, &:before { background-color: $color-light;}
+  }
+}
+
+
+
+
+
+
+
+
+
+

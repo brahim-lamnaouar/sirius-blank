@@ -4,32 +4,34 @@
 $color-primary:           #1E88E5 !default;
 $color-primary-light:     lighten($color-primary, 10%) !default;
 $color-primary-dark:      darken($color-primary, 3%) !default;
-
-$color-secondary:         #43A047  !default;
+$color-secondary:         #16a085  !default;
 $color-secondary-light:   lighten($color-secondary, 10%) !default;
 $color-secondary-dark:    darken($color-secondary, 10%) !default;
-
-
 $color-danger:            #E53935  !default;
 $color-danger-light:      lighten($color-danger, 10%) !default;
 $color-danger-dark:       darken($color-danger, 10%) !default;
 
-
+$color-white :            #fff !default;
+$color-black :            #000 !default;
+$color-green :            #3aba86 !default;
+$color-blue :             #63ABFF !default;
+$color-purple :           #b45bc4 !default;
+$color-orange :           #f2ae3b !default;
+$color-pink :             #ff478e !default;
 
 $color-soft-dark:         rgba(0, 0, 0, .5) !default;
 $color-dark:              #323232 !default;
 $color-dark-2:            #555 !default;
 $color-light:             #f9f9f9 !default;
-$color-light-2:             #717171 !default;
-$color-grey:              #eee !default;
-$color-green:             #26a69a !default;
-$color-red:               #c91919 !default;
-
+$color-light-2:           #717171 !default;
+$color-grey:              #f7f7f7 !default;
+$color-grey-2:            #eee !default;
 // =============================================================================
 // Screen
 // =============================================================================
 $media-laptop:  1280px;
 $media-tablet:  992px;
+$media-custom:  768px;
 $media-phone:   600px;
 
 // =============================================================================
