@@ -14,7 +14,7 @@ ul {
 // =============================================================================
 .bg-primary {background: $color-primary !important;}
 .bg-secondary {background: $color-secondary !important;}
-.bg-white {background: $color-light !important;}
+.bg-white {background: $color-white !important;}
 .bg-dark {background: $color-dark !important;}
 .bg-danger {background: $color-danger !important;}
 .bg-purple {background: $color-purple !important;}
@@ -22,5 +22,72 @@ ul {
 .bg-pink {background: $color-pink !important;}
 .bg-green {background: $color-green !important;}
 .bg-orange {background: $color-orange !important;}
-.bg-grey {background: $color-grey !important;}
+.bg-grey {background: $color-light-2 !important;}
 
+
+// =============================================================================
+// TEXT
+// =============================================================================
+.text-thin {font-weight: $f-thin !important;}
+.text-light {font-weight: $f-light !important;}
+.text-regular {font-weight:$f-regular !important;}
+.text-bold {font-weight: $f-bold !important;}
+.text-black {font-weight: $f-black !important;}
+
+.text-center {text-align: center !important;}
+.m-text-center {@include media-query-max($media-tablet) {text-align: center;}}
+.text-left {text-align: left !important;}
+.text-right {text-align: right !important;}
+
+.text-primary {color: $color-primary !important;}
+.text-secondary {color: $color-secondary !important;}
+.text-white {color: $color-light !important;}
+.text-dark {color: $color-dark !important;}
+.text-dark-3 {color: $color-dark-3 !important;}
+.text-dark-5 {color: $color-dark-5 !important;}
+.text-dark-7 {color: $color-dark-7 !important;}
+.text-danger {color: $color-danger !important;}
+.text-purple {color: $color-purple !important;}
+.text-blue {color: $color-blue !important;}
+.text-pink {color: $color-pink !important;}
+.text-green {color: $color-green !important;}
+.text-orange {color: $color-orange !important;}
+.text-gray-c {color: $color-gray-c !important;}
+.text-gray-e {color: $color-gray-e !important;}
+.text-gray-4 {color: $color-gray-4 !important;}
+
+.text-capitalize{text-transform: capitalize !important;}
+.text-uppercase{text-transform: uppercase !important;}
+.text-lowercase{text-transform: lowercase !important;}
+
+
+
+// =============================================================================
+// Bootstrap
+// =============================================================================
+.l-vertical-align{@include vertical-align-center($media-laptop)}
+.m-vertical-align{@include vertical-align-center($media-tablet)}
+.s-vertical-align{@include vertical-align-center($media-phone)}
+
+.mt-0{margin-top: 0;}
+.mr-0{margin-right: 0;}
+.mb-0{margin-bottom: 0;}
+.ml-0{margin-left: 0;}
+
+.mt-2{margin-top: 2rem;}
+.mr-2{margin-right: 2rem;}
+.mb-2{margin-bottom: 2rem;}
+.ml-2{margin-left: 2rem;}
+
+.m-mt-1{@include media-query-max($media-tablet){margin-top: 1rem;}}
+.mr-1{@include media-query-max($media-tablet){margin-right:  1rem;}}
+.mb-1{@include media-query-max($media-tablet){margin-bottom: 1rem;}}
+.ml-1{@include media-query-max($media-tablet){margin-left: 1rem;}}
+
+// =============================================================================
+// display
+// =============================================================================
+.d-none {display: none;}
+.d-block {display: block;}
+.m-d-none {@include media-query-max($media-tablet){display: none;}}
+.m-d-block {@include media-query-max($media-tablet){display: block;}}

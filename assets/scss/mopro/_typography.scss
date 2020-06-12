@@ -1,5 +1,5 @@
 // =============================================================================
-// Weight
+// Font Weight
 // =============================================================================
 $f-thin: 100;
 $f-light: 300;
@@ -11,16 +11,17 @@ $f-black: 900;
 // Roboto Mono
 // =============================================================================
 $f-roboto-mono: "Roboto Mono", sans-serif;
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Regular", 400, null, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Italic", 400, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-MediumItalic", 600, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Medium", 600, null, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-LightItalic", 200, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Light", 200, null, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-ThinItalic", 100, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Thin", 100, null, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-BoldItalic", 800, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Bold", 800, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Regular", $f-regular, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Italic", $f-regular, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-MediumItalic", $f-bold, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Medium", $f-bold, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-LightItalic", $f-light, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Light", $f-light, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-ThinItalic", $f-thin, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Thin", $f-thin, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-BoldItalic", $f-black, italic, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Bold", $f-black, null, ttf)
+
 // =============================================================================
 // Lato
 // =============================================================================
@@ -62,7 +63,7 @@ h3, .h3 {
   @include media-query-max($media-phone) {font-size: 1.7rem !important;}
 }
 h4, .h4 {
-  font-size: 2.2rem !important;
+  font-size: 2rem !important;
   @include media-query-max($media-tablet) {font-size: 1.8rem !important;}
   @include media-query-max($media-phone) {font-size: 1.5rem !important;}
 }
@@ -87,13 +88,17 @@ html, body{
   font-weight: $f-regular;
 }
 strong{
-  font-weight: 600;
+  font-weight: $f-bold;
 }
 b{
-  font-weight: 800;
+  font-weight: $f-black;
 }
 p {
   line-height: 1.5rem;
+}
+a{
+  font-style: normal;
+  font-weight: $f-bold;
 }
 // =============================================================================
 // Highlight
@@ -102,7 +107,7 @@ p {
   font-style: inherit;
   position: relative;
   z-index: 2;
-  font-weight: 400;
+  font-weight: $f-regular;
   &:before{
     content: "";
     position: absolute;
@@ -115,39 +120,3 @@ p {
     z-index: -1;
   }
 }
-
-// =============================================================================
-// Links
-// =============================================================================
-a{
-  font-style: normal;
-  font-weight: 600;
-}
-
-// =============================================================================
-// TEXT
-// =============================================================================
-.text-thin {font-weight: $f-thin !important;}
-.text-light {font-weight: $f-light !important;}
-.text-regular {font-weight:$f-regular !important;}
-.text-bold {font-weight: $f-bold !important;}
-.text-black {font-weight: $f-black !important;}
-
-.text-center {text-align: center !important;}
-.text-left {text-align: left !important;}
-.text-right {text-align: right !important;}
-
-.text-primary {color: $color-primary !important;}
-.text-secondary {color: $color-secondary !important;}
-.text-white {color: $color-light !important;}
-.text-dark {color: $color-dark !important;}
-.text-danger {color: $color-danger !important;}
-.text-purple {color: $color-purple !important;}
-.text-blue {color: $color-blue !important;}
-.text-pink {color: $color-pink !important;}
-.text-green {color: $color-green !important;}
-.text-orange {color: $color-orange !important;}
-
-.text-capitalize{text-transform: capitalize !important;}
-.text-uppercase{text-transform: uppercase !important;}
-.text-lowercase{text-transform: lowercase !important;}

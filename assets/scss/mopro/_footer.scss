@@ -4,9 +4,8 @@
 $social-link-size: 35px;
 
 .footer {
-  background:#666;
+  background:$color-dark-3;
   overflow:visible;
-  margin-top: 40px;
   padding: 60px 60px 20px;
   font-family: $f-roboto-mono;
   font-weight: 400;
@@ -81,10 +80,10 @@ $social-link-size: 35px;
     }
 
     ul.posts { margin:0; padding:0; list-style: none;}
-    ul.posts li {padding:9px 0; border-bottom:1px solid $color-light-2; font-size:15px;}
+    ul.posts li {padding:9px 0; border-bottom:1px solid $color-gray-4; font-size:15px;}
     ul.posts li:first-child {padding-top:0; }
     ul.posts li:last-child {border-bottom:0; }
-    ul.posts li a {color:$color-grey; font-weight: 400 !important;}
+    ul.posts li a {color:$color-light-2; font-weight: 400 !important;}
     ul.posts li a:hover {color:$color-light;}
     ul.posts li span {display:block;font-size:12px; margin-top:3px;color:#B9B9B8;}
   }
@@ -92,7 +91,7 @@ $social-link-size: 35px;
 #mc_embed_signup { margin-top:15px;}
 #mc_embed_signup input[type="email"] { border-radius:5px; width:100%; padding:10px 15px; border:0; box-shadow: none;}
 #mc_embed_signup input[type="submit"] { margin-top:5px; transition: all 250ms ease-out 0s; border-radius:5px; width:100%; padding:10px 15px; border:0; box-shadow: none; color:$color-light; background:$color-secondary;}
-#mc_embed_signup input[type="submit"]:hover { background:$color-dark-2; cursor: pointer;}
+#mc_embed_signup input[type="submit"]:hover { background:$color-dark-5; cursor: pointer;}
 
 /* Social Buttons ---------------------- */
 .social-links {
@@ -103,7 +102,7 @@ $social-link-size: 35px;
     display: inline-table;
 
     a {
-      color: $color-grey-2;
+      color: $color-light-3;
       font-size: 15px !important;
       display: inline-block;
       padding: 10px;
@@ -115,7 +114,7 @@ $social-link-size: 35px;
 }
 
 .copyright {padding:7px 0 1px; background:#525151;}
-.copyright p {font-size:13px; color:$color-grey; margin-bottom:0;
+.copyright p {font-size:13px; color:$color-light-2; margin-bottom:0;
   font-weight: 400;}
 
 /* Back to Top Button  ----------------------- */

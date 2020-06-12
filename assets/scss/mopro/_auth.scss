@@ -1,0 +1,96 @@
+
+
+.auth-container {
+  width: 80%;
+  @include media-query-max($media-laptop) {
+    width: 96%;
+  }
+  @include media-query-max($media-tablet) {
+    width: 80% !important;
+  }
+  @include media-query-max($media-phone) {
+    width: 96% !important;
+  }
+}
+
+.verify-container {
+  width: 100%;
+  padding: 40px 10px 10px;
+  @include media-query-min($media-tablet) {padding: 40px 40px 10px;}
+
+  .row{
+    margin-bottom: 0;
+    h6{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.verify-container, .auth-container{
+  background: $color-white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 120px auto 60px;
+
+  //padding: 150px 40px;
+/*
+  @include media-query-max($media-tablet) {
+    padding: 50px 0;
+  }
+  @include media-query-max($media-phone) {
+    width: 96% !important;
+  }*/
+
+
+  .col > img {
+    max-width: 100%;
+    margin: auto;
+    @include media-query-max($media-tablet) {width: 60%;}
+  }
+
+  .input-field{
+    label {
+      padding-left: .7rem;
+    }
+    & > label:not(.label-icon).active {transform: translateY(-18px) scale(0.8);}
+  }
+
+  input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default){
+    border: 1px solid $color-gray-e;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+    &:focus, &.valid{
+      box-shadow: 0 0 2px 0 $color-secondary;
+      border: 1px solid $color-secondary;
+    }
+
+    &.error{
+      border-color: $color-danger;
+      margin-bottom: 20px;
+      &:focus, &.valid{
+        box-shadow: 0 0 2px 0 $color-danger;
+        border-color: $color-danger;
+
+        & + label {
+          color: $color-danger;
+        }
+      }
+    }
+  }
+
+  .error-message{
+    float: left;
+    margin-top: -20px;
+    font-size: 13px;
+    color: $color-danger;
+  }
+
+  .btn{
+    border-radius: 30px;
+    padding: 3px 20px;
+    height: 44px;
+  }
+}

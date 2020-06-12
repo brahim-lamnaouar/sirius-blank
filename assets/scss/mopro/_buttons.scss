@@ -48,9 +48,9 @@
 
   &.button-light span{
     background: $color-dark;
-    background: linear-gradient(to right,  $color-light 0%,$color-grey 100%);
-    background: -webkit-linear-gradient(to right,  $color-light 0%,$color-grey 100%);
-    background: -moz-linear-gradient(to right,  $color-light 0%,$color-grey 100%);
+    background: linear-gradient(to right,  $color-light 0%,$color-light-2 100%);
+    background: -webkit-linear-gradient(to right,  $color-light 0%,$color-light-2 100%);
+    background: -moz-linear-gradient(to right,  $color-light 0%,$color-light-2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eee',GradientType=1 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

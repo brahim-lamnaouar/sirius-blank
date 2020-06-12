@@ -60,7 +60,7 @@
 // =============================================================================
 .dropdown-content {
   li a {
-    color: $color-dark-2;
+    color: $color-dark-5;
     &:hover{
       color: $color-dark;
     }
@@ -89,7 +89,7 @@
 // =============================================================================
 // Fixed Navbar
 // =============================================================================
-.fixed-nav{
+.fixed-nav, .sticky-nav{
   position: fixed;
   top: -$navbar-height;
   transform: translateY($navbar-height);
@@ -97,7 +97,7 @@
   box-shadow: 1px 1px 5px $color-soft-dark;
 
   ul a, .sidenav-trigger {
-    color: $color-dark-2;
+    color: $color-dark-5;
   }
 
   .nav-logo {
@@ -109,7 +109,7 @@
 // =============================================================================
 // Parallax
 // =============================================================================
-.parallax-container{
+.index-banner{
   height: 664px;
   @include media-query-max($media-tablet) {height: 560px;}
 

@@ -53,3 +53,13 @@
 @mixin media-query-min($width) {
   @media (min-width: $width + 1) { @content; }
 }
+
+// =============================================================================
+// Helpers
+// =============================================================================
+@mixin vertical-align-center($width) {
+  @include media-query-min($width){
+    display: flex;
+    align-items: center;
+  }
+}
