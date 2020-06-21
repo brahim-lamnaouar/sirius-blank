@@ -13,6 +13,8 @@ ul {
 // Backgound
 // =============================================================================
 .bg-primary {background: $color-primary !important;}
+.bg-primary-light {background: $color-primary-light !important;}
+.bg-primary-dark {background: $color-primary-dark !important;}
 .bg-secondary {background: $color-secondary !important;}
 .bg-white {background: $color-white !important;}
 .bg-dark {background: $color-dark !important;}
@@ -22,7 +24,7 @@ ul {
 .bg-pink {background: $color-pink !important;}
 .bg-green {background: $color-green !important;}
 .bg-orange {background: $color-orange !important;}
-.bg-grey {background: $color-light-2 !important;}
+.bg-grey {background: $color-light !important;}
 
 
 // =============================================================================
@@ -32,12 +34,13 @@ ul {
 .text-light {font-weight: $f-light !important;}
 .text-regular {font-weight:$f-regular !important;}
 .text-bold {font-weight: $f-bold !important;}
-.text-black {font-weight: $f-black !important;}
+//.text-black {font-weight: $f-black !important;}
 
 .text-center {text-align: center !important;}
 .m-text-center {@include media-query-max($media-tablet) {text-align: center;}}
 .text-left {text-align: left !important;}
 .text-right {text-align: right !important;}
+.text-justify {text-align: justify !important;}
 
 .text-primary {color: $color-primary !important;}
 .text-secondary {color: $color-secondary !important;}
@@ -79,10 +82,20 @@ ul {
 .mb-2{margin-bottom: 2rem;}
 .ml-2{margin-left: 2rem;}
 
+.mt-1{margin-top: 1rem;}
+.mr-1{margin-right: 1rem;}
+.mb-1{margin-bottom: 1rem;}
+.ml-1{margin-left: 1rem;}
+
+.mt-6{margin-top: 6rem;}
+.mr-6{margin-right: 6rem;}
+.mb-6{margin-bottom: 6rem;}
+.ml-6{margin-left: 6rem;}
+
 .m-mt-1{@include media-query-max($media-tablet){margin-top: 1rem;}}
-.mr-1{@include media-query-max($media-tablet){margin-right:  1rem;}}
-.mb-1{@include media-query-max($media-tablet){margin-bottom: 1rem;}}
-.ml-1{@include media-query-max($media-tablet){margin-left: 1rem;}}
+.m-mr-1{@include media-query-max($media-tablet){margin-right:  1rem;}}
+.m-mb-1{@include media-query-max($media-tablet){margin-bottom: 1rem;}}
+.m-ml-1{@include media-query-max($media-tablet){margin-left: 1rem;}}
 
 // =============================================================================
 // display
@@ -91,3 +104,53 @@ ul {
 .d-block {display: block;}
 .m-d-none {@include media-query-max($media-tablet){display: none;}}
 .m-d-block {@include media-query-max($media-tablet){display: block;}}
+
+// =============================================================================
+// Button
+// =============================================================================
+.btn{
+  border-radius: 7px;
+  background: $color-primary-light;
+  padding: 7px 20px;
+  height: 50px;
+  font-weight: $f-regular;
+  transition: background-color .3s;
+
+  &:hover {
+    background: darken($color-primary-light, 2%);
+  }
+}
+
+// =============================================================================
+// Width
+// =============================================================================
+.mw-80 {max-width: 80% !important;}
+.mw-50 {max-width: 50% !important;}
+
+// =============================================================================
+// alert
+// =============================================================================
+.alert{
+  display: block;
+  border-radius: 5px;
+  background: $color-primary-light;
+  border: 1px solid $color-primary;
+  color: $color-white;
+  padding: 10px !important;
+
+  &.alert-success{
+    background: lighten($color-green, 5%);
+    border-color: $color-green;
+  }
+
+  &.alert-danger{
+    background: lighten($color-danger, 5%);
+    border-color: $color-danger;
+  }
+
+  &.alert-warning{
+    background: lighten($color-orange, 5%);
+    border-color: $color-orange;
+  }
+
+}

@@ -170,6 +170,15 @@
     color: $color-secondary;
     &:after, &:before { background-color: $color-secondary;}
   }
+  &.button-secondary-light{
+    color: $color-secondary-light;
+    &:after, &:before { background-color: $color-secondary-light;}
+  }
+
+  &.button-primary-light{
+    color: $color-primary-light;
+    &:after, &:before { background-color: $color-primary-light;}
+  }
   &.button-pink{
     color: $color-pink;
     &:after, &:before { background-color: $color-pink;}

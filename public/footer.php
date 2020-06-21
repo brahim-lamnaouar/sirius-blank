@@ -2,7 +2,7 @@
 <!-- FOOTER -->
 <section class="footer" id="footer">
 
-    <div class="footer-widgets">
+    <div class="footer-widgets container">
         <div class="row">
 
             <!-- FOOTER WIDGET LOGO -->

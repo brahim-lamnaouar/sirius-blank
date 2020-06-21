@@ -5,12 +5,12 @@ $f-thin: 100;
 $f-light: 300;
 $f-regular: 400;
 $f-bold: 700;
-$f-black: 900;
+//$f-black: 900;
 
 // =============================================================================
 // Roboto Mono
 // =============================================================================
-$f-roboto-mono: "Roboto Mono", sans-serif;
+/*$f-roboto-mono: "Roboto Mono", sans-serif;
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Regular", $f-regular, null, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Italic", $f-regular, italic, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-MediumItalic", $f-bold, italic, ttf)
@@ -20,7 +20,7 @@ $f-roboto-mono: "Roboto Mono", sans-serif;
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-ThinItalic", $f-thin, italic, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Thin", $f-thin, null, ttf)
 @include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-BoldItalic", $f-black, italic, ttf)
-@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Bold", $f-black, null, ttf)
+@include font-face('Roboto Mono', "./fonts/roboto-mono/RobotoMono-Bold", $f-black, null, ttf)*/
 
 // =============================================================================
 // Lato
@@ -34,8 +34,8 @@ $f-lato: "Lato", sans-serif;
 @include font-face('Lato', "./fonts/lato/Lato-Italic", $f-regular, italic, ttf)
 @include font-face('Lato', "./fonts/lato/Lato-BoldItalic", $f-bold, italic, ttf)
 @include font-face('Lato', "./fonts/lato/Lato-Bold", $f-bold, null, ttf)
-@include font-face('Lato', "./fonts/lato/Lato-BlackItalic", $f-black, italic, ttf)
-@include font-face('Lato', "./fonts/lato/Lato-Black", $f-black, null, ttf)
+//@include font-face('Lato', "./fonts/lato/Lato-BlackItalic", $f-black, italic, ttf)
+//@include font-face('Lato', "./fonts/lato/Lato-Black", $f-black, null, ttf)
 
 
 // =============================================================================
@@ -45,7 +45,6 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, h5, .h5, h6, .h6{
   font-family: $f-lato;
   font-weight: $f-light;
   font-style: normal;
-  color: $color-dark;
 }
 h1, .h1 {
   font-size: 3.5rem !important;
@@ -90,11 +89,9 @@ html, body{
 strong{
   font-weight: $f-bold;
 }
-b{
-  font-weight: $f-black;
-}
 p {
   line-height: 1.5rem;
+  text-align: justify;
 }
 a{
   font-style: normal;

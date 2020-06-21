@@ -9,7 +9,7 @@ import './anime'
     $(function(){
 
         $('.sidenav').sidenav();
-        $('.parallax').parallax();
+        //$('.parallax').parallax();
         $(".dropdown-trigger").dropdown();
 
 

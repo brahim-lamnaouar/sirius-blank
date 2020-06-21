@@ -2,28 +2,70 @@
 // Serviecs
 // =============================================================================
 
+.home-background-banner{
+  background:  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('./images/home-banner.jpg');
+  background-size: cover;
+}
+
 section {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.s-advantages {
-  img {max-width: 100%;}
+.s-advantages{
+  .section-image {max-width: 80%; text-align: center}
+  .button-image{width: 100%;max-width: 200px;}
+}
+
+.s-security {
+  .section-image {max-width: 50%; text-align: center}
+  .button-image{width: 100%;max-width: 200px;}
 }
 
 .services-banner{
 
   .service {
-    margin-bottom: 35px;
+    margin: 10px 1% 25px;
+    width: 31%;
+    @include media-query-max($media-phone) {
+      width: 100%;
+      margin: 10px 0 25px;
+    }
+    @include media-query-max($media-tablet) {
+      width: 47.5%;
+    }
+  }
+
+  .security {
+    margin: 10px 1% 25px;
+    width: 47%;
+    @include media-query-max($media-custom) {
+      width: 100%;
+      margin: 10px 0 25px;
+    }
+  }
+
+  .service, .security {
+    background: $color-white;
+    display: inline-grid;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+
+    &:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
     .icon {
       margin-top: 25px;
       height: 55px;
-      @include media-query-max($media-phone) {float:left;height: 100px; width: 100px;
-        margin-right: 20px;}
+      //@include media-query-max($media-phone) {float:left;height: 100px; width: 100px;margin-right: 20px;}
       img {
         max-height: 55px;
-        @include media-query-max($media-phone) {margin-top: 10px;max-height: 80px; width: 100px;}
+        //@include media-query-max($media-phone) {margin-top: 10px;max-height: 80px; width: 100px;}
       }
     }
     .title{
@@ -49,7 +91,7 @@ section {
 }
 
 .price-table {
-  .row{
+  .table-small{
     @include media-query-min($media-tablet) {display: none;}
   }
   .col {

@@ -23,7 +23,7 @@ function json_path($file)
 </head>
 <body>
 
-<nav class="main-nav sticky-nav" role="navigation">
+<nav class="main-nav" role="navigation">
     <div class="nav-wrapper">
         <a href="#" data-target="nav-mobile" class="left sidenav-trigger"><i class="material-icons">menu</i></a>
         <a href="#"><img src="/img/itom.png" alt="MOPRO" class="left nav-logo"></a>
@@ -34,12 +34,27 @@ function json_path($file)
         </ul>
         <ul class="left hide-on-med-and-down">
             <li><a href="/mopro.php">Acceuil</a></li>
+            <li>
+                <a href="/">Logiciels</a>
+                <ul class="dropdown">
+                    <li><a href="#hello">Fonctionalités</a></li>
+                    <li><a href="#hello">Sécurité et confidentialité</a></li>
+                    <li><a href="#hello">Demande de démo</a></li>
+                    <li><a href="#hello">Documentation</a></li>
+                </ul>
+            </li>
             <li><a href="/">Services</a></li>
             <li><a href="/">Tarifs</a></li>
-            <li><a href="/">Contactez nous</a></li>
+            <li>
+                <a href="/">Plus</a>
+                <ul class="dropdown">
+                    <li><a href="#hello">A propos de nous</a></li>
+                    <li><a href="#hello">Contactez-nous</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="right auth">
-            <a class="button-border type2 button-secondary" href="signin.php">Se connecter</a>
+            <a class="button-border type2 button-purple" href="signin.php">Se connecter</a>
             <a class="button-border type2" href="signup.php">S'inscrire</a>
         </div>
         <!--<ul class="right member">
@@ -52,5 +67,13 @@ function json_path($file)
     <li><a href="/">Home</a></li>
     <li><a href="/">About</a></li>
     <li><a href="/">Services</a></li>
-    <li><a href="/">Contact us</a></li>
+
+    <li>
+        <a href="/">Contactez nous</a>
+        <ul class="dropdown">
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#hello">Hello</a></li>
+        </ul>
+    </li>
 </ul>
