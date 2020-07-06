@@ -2,24 +2,25 @@
 <!-- FOOTER -->
 <section class="footer" id="footer">
 
-    <div class="footer-widgets container">
+    <div class="footer-widgets">
         <div class="row">
 
-            <!-- FOOTER WIDGET LOGO -->
-            <div class="col l3 m6 s12 ">
+            <div class="col l3 m6 s12">
                 <div class="footer-widget">
                     <img src="/img/itom.png" alt="ITOM" class="footer-logo">
                     <ul class="social-links">
-                        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" title="Facebook"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/itomm/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" title="Facebook"><img src="/icons/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#" title="LinkedIn"><img src="/icons/linkedin.svg" alt="LinkedIn"></a></li>
+                        <li><a href="#" title="Twitter"><img src="/icons/twitter.svg" alt="Twitter"></a></li>
                     </ul>
+                    <p class="company-contact"><span class="text-bold">Téléphone:</span> +212675053736</p>
+                    <p class="company-contact"><span class="text-bold">Email:</span> <a href="mailto:contact@mopro.ma">contact@mopro.ma</a></p>
+                    <p class="company-contact"><span class="text-bold">Adresse:</span> Bd zerktouni, 132, Casablanca, Maroc</p>
+
                 </div>
             </div>
-            <!-- END FOOTER WIDGET -->
 
 
-            <!-- FOOTER WIDGET  SOLUTION -->
             <div class="col l3 m6 s12">
                 <div class="footer-widget">
                     <h4 class="h5">Mentions légales</h4>
@@ -30,10 +31,8 @@
                     </ul>
                 </div>
             </div>
-            <!-- END FOOTER WIDGET -->
 
-            <!-- FOOTER WIDGET  SERVICES -->
-            <div class="col l3 m6 push-m6 s12">
+            <div class="col l3 m6 s12">
                 <div class="footer-widget">
                     <h4 class="h5">AIDE</h4>
                     <ul class="posts">
@@ -42,10 +41,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- END FOOTER WIDGET C -->
-            <!--  FOOTER WIDGET CONTACTER NOUS -->
-
-            <div class="col l3 m6 pull-m6 s12">
+            <div class="col l3 m6 s12">
                 <div class="footer-widget">
                     <a href="#" class="btn-store">
                         <img src="/img/apple-store-button.svg" alt="GET IN ON GOOGLE PLAY">

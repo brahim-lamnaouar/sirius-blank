@@ -112,12 +112,15 @@
   }
 
 
-  input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default) {
+  input[type="text"]:not(.browser-default),
+  input[type="password"]:not(.browser-default),
+  textarea.materialize-textarea {
     border: 1px solid $color-gray-e;
     border-radius: 5px;
     padding: 0 10px;
     font-size: 14px;
     box-sizing: border-box;
+    line-height: 45px;
 
     &.valid {
       border: 1px solid $color-secondary;

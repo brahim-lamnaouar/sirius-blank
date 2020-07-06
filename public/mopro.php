@@ -1,20 +1,9 @@
 <?php require_once './header.php'; ?>
 
 <div id="index-banner" class="index-banner parallax-container with-nav">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <h1 class="ml11 mt-6 text-light text-white text-uppercase">
-              <span class="text-wrapper">
-                <span class="line line1"></span>
-                <span class="letters">MOPRO CRM SOLUTION</span>
-              </span>
-            </h1>
-            <h2 class="ml4 h3 text-white">
-                <span class="letters letters-1">Ready</span>
-                <span class="letters letters-2">Set</span>
-                <span class="letters letters-3">Go!</span>
-            </h2>
-        </div>
+    <div class="section-container">
+        <h1>MOPRO CRM SOLUTION</h1>
+        <h2 class="h3">This is usually a longer slogun for the home page only</h2>
     </div>
     <div class="parallax home-background-banner"><img src="/img/home-banner.jpg" alt="Bienvenu chez mopro"></div>
 </div>
@@ -23,7 +12,6 @@
 <div class="home-container">
 
     <section class="s-advantages bg-white">
-        <div class="container">
             <div class="row text-center">
                 <div class="col s12 mb-1">
                     <h2 class="h3">Connectez <span class="text-regular">votre équipe</span> au logiciel</h2>
@@ -43,11 +31,12 @@
                     <h4>Une mobilité sans compromis</h4>
                     <p class="text-dark-7">Accédez aux données de votre entreprise sur la version mobile dédiée. Disponible sur iOS et Android.</p>
                     <div class="row">
-                        <div class="col l6 m12">
+                        <div class="col l6 s12">
                             <a href="#" class="">
                                 <img class="button-image" src="/img/apple-store-button.svg" alt="GET IN ON GOOGLE PLAY">
-                            </a></div>
-                        <div class="col l6 m12">
+                            </a>
+                        </div>
+                        <div class="col l6 s12">
                             <a href="#" class="btn-store">
                                 <img class="button-image" src="/img/google-play-button.svg" alt="GET IN ON APPLE STORE">
                             </a>
@@ -55,21 +44,20 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Services banner-->
     <section class="bg-grey services-banner">
-        <div class="container">
+        <div class="section-container">
             <div class="row">
-                <div class="col l8 m10 wow fadeIn">
-                    <h2 class="title big">Ce que nous <span class="text-regular">offrons</span></h2>
-                    <div class="content"><p class="text-dark-7">Décuplez votre productivité avec notre logiciel en ligne</p></div>
+                <div class="col l8 m12 wow fadeIn">
+                    <h2 class="title big m-text-center">Ce que nous <span class="text-regular">offrons</span></h2>
+                    <div class="content"><p class="text-dark-7 m-text-center">Décuplez votre productivité avec notre logiciel en ligne</p></div>
                 </div>
                 <a href="/crm.php">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/multiple_devices.svg" alt="CRM et gestion client<"/></div>
-                    <h4 class="h6 text-bold title">CRM et Gestion client</h4>
+                    <h4 class="h6 title">CRM et Gestion client</h4>
                     <div class="content"><p>Prospectez efficacement, ne ratez plus d'affaires grâce aux fonctions CRM</p></div>
                 </div>
                 </a>
@@ -78,6 +66,7 @@
                     <div class="icon"><img src="/icons/receipt.svg" alt="Devis et facturation"/></div>
                     <h4 class="h6 text-bold title">Devis et facturation</h4>
                     <div class="content"><p>Faites vos devis, puis facturez vite et bien, et suivez les règlements et la rentabilité</p></div>
+                    <div class="read-more">Lire Plus</div>
                 </div>
                 </a>
                 <a href="achats.php">
@@ -114,7 +103,7 @@
                     <h4 class="h6 text-bold title">Prise de rendez-vous</h4>
                     <div class="content"><p>Organisez vos réservations et prises de rendez-vous sur un agenda en ligne partagé</p></div>
                 </div>
-                </a>-->
+                </a>
                 <a href="#hello">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/speaker.svg" alt="Campagnes marketing"/></div>
@@ -136,13 +125,13 @@
                     <div class="content"><p>Offrez à vos clients un support de premier ordre. Gestion des tickets, des actions internes</p></div>
                 </div>
                 </a>
-                <!--<a href="#hello">
+                <a href="#hello">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/customer_support.svg" alt="Service après-vente"/></div>
                     <h4 class="h6 text-bold title">Service après-vente</h4>
                     <div class="content"><p>Suivez vos demandes de réparation et de SAV. Offrez au client un suivi à jour</p></div>
                 </div>
-                </a>-->
+                </a>
                 <a href="#hello">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/package.svg" alt="Gestion de stocks"/></div>
@@ -157,7 +146,7 @@
                     <div class="content"><p>Lancez votre production, organisez l'information pour chaque produit</p></div>
                 </div>
                 </a>
-                <!--<a href="#hello">
+                <a href="#hello">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/collaboration.svg" alt="Collaboration"/></div>
                     <h4 class="h6 text-bold title">Collaboration</h4>
@@ -198,14 +187,17 @@
                     <h4 class="h6 text-bold title">Portail et extranet</h4>
                     <div class="content"><p>Organisez vos échanges avec les tiers : clients, fournisseurs, partenaires</p></div>
                 </div>
-                </a>-->
+                </a>
                 <a href="#hello">
                 <div class="service hoverable wow fadeIn">
                     <div class="icon"><img src="/icons/idea.svg" alt="Business intelligence"/></div>
                     <h4 class="h6 text-bold title">Business intelligence</h4>
                     <div class="content"><p>Créez vos rapports interactifs pour faciliter la prise de décision</p></div>
                 </div>
-                </a>
+                </a>-->
+            </div>
+            <div class="read-more text-center">
+                <a href="#" class="btn btn-primary">Decouvrir plus</a>
             </div>
         </div>
     </section>
@@ -215,7 +207,6 @@
 
     <!-- Security banner-->
     <section class="bg-white services-banner">
-        <div class="container">
             <div class="row text-center">
                 <div class="col s12 mb-1">
                     <h2 class="h3">Notre disponibilité est supérieure à <span class="text-regular">99.9998%</span></h2>
@@ -252,7 +243,6 @@
                     <div class="content"><p> Conforme à la directive de la Direction Générale des Impots, vos données sont archivées en toute sécurité, directement depuis votre logiciel. Une fois créés, vos documents sont sauvegardés sur support informatique et sont consultables à tout moment, indépendamment de votre logiciel de gestion</p></div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Security banner-->
 
@@ -270,6 +260,7 @@
         <div class="col s12 mb-1">
             <h2 class="h3 mt-0 text-center">Nos <span class="text-regular">tarifs</span></h2>
         </div>
+        <!--
         <table class="striped pricing-table table-large  wow fadeInUp">
             <thead>
             <tr>
@@ -322,7 +313,6 @@
                             </defs>
                             <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="170" height="50"></rect>
                         </svg>
-                        <!--<span>Voir mes réalisations</span>-->
                         <span>C'est parti</span>
                     </a>
                 </td>
@@ -337,7 +327,6 @@
                             </defs>
                             <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad2)" width="170" height="50"></rect>
                         </svg>
-                        <!--<span>Voir mes réalisations</span>-->
                         <span>C'est parti</span>
                     </a>
                 </td>
@@ -352,13 +341,14 @@
                             </defs>
                             <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="170" height="50"></rect>
                         </svg>
-                        <!--<span>Voir mes réalisations</span>-->
                         <span>C'est parti</span>
                     </a>
                 </td>
             </tr>
             </tbody>
         </table>
+        -->
+        <!--
         <div class="row">
             <div class="col m6 s12  wow fadeInLeft">
                 <table class="striped pricing-table table-small">
@@ -400,7 +390,6 @@
                                     </defs>
                                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad3)" width="170" height="50"></rect>
                                 </svg>
-                                <!--<span>Voir mes réalisations</span>-->
                                 <span>C'est parti</span>
                             </a>
                         </td>
@@ -448,7 +437,6 @@
                                     </defs>
                                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad5)" width="170" height="50"></rect>
                                 </svg>
-                                <!--<span>Voir mes réalisations</span>-->
                                 <span>C'est parti</span>
                             </a>
                         </td>
@@ -457,7 +445,9 @@
                 </table>
             </div>
         </div>
+        -->
         <div class="row">
+            <!--
             <div class="col m6 s12  wow fadeInLeft">
                 <table class="striped pricing-table table-small">
                     <thead>
@@ -498,7 +488,6 @@
                                     </defs>
                                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad4)" width="170" height="50"></rect>
                                 </svg>
-                                <!--<span>Voir mes réalisations</span>-->
                                 <span>C'est parti</span>
                             </a>
                         </td>
@@ -506,8 +495,8 @@
                     </tbody>
                 </table>
             </div>
-
-            <div class="col l6 pull-l3 m6 s12  wow fadeInLeft">
+            -->
+            <div class="col l8 push-l2 m12 s12  wow fadeInLeft">
                 <table class="striped pricing-premium pricing-table">
                     <thead>
                     <tr>

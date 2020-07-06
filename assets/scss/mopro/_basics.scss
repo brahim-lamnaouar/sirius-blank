@@ -38,6 +38,7 @@ ul {
 
 .text-center {text-align: center !important;}
 .m-text-center {@include media-query-max($media-tablet) {text-align: center;}}
+.s-text-center {@include media-query-max($media-phone) {text-align: center;}}
 .text-left {text-align: left !important;}
 .text-right {text-align: right !important;}
 .text-justify {text-align: justify !important;}
@@ -64,7 +65,10 @@ ul {
 .text-lowercase{text-transform: lowercase !important;}
 
 
-
+.direction-right{ direction: rtl !important;}
+.m-direction-right{ @include media-query-max($media-tablet) {direction: rtl !important;}}
+.m-direction-left{ @include media-query-max($media-tablet) {direction: ltr !important;}}
+.direction-left{direction: rtl !important;}
 // =============================================================================
 // Bootstrap
 // =============================================================================

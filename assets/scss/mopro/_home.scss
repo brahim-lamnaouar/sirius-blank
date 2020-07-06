@@ -2,14 +2,17 @@
 // Serviecs
 // =============================================================================
 
-.home-background-banner{
-  background:  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('./images/home-banner.jpg');
-  background-size: cover;
-}
 
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 20px 25px;
+  @include media-query-max($media-tablet) {padding: 20px 5px;}
+}
+
+.section-container {
+  width: 100%;
+  margin: auto;
+  @include media-query-min($media-laptop) {width: 85%;}
+  @include media-query-min($media-wide) {width: 70%;}
 }
 
 .s-advantages{
@@ -32,13 +35,13 @@ section {
       margin: 10px 0 25px;
     }
     @include media-query-max($media-tablet) {
-      width: 47.5%;
+      width: 47.7%;
     }
   }
 
   .security {
     margin: 10px 1% 25px;
-    width: 47%;
+    width: 47.7%;
     @include media-query-max($media-custom) {
       width: 100%;
       margin: 10px 0 25px;
@@ -62,17 +65,18 @@ section {
     .icon {
       margin-top: 25px;
       height: 55px;
-      //@include media-query-max($media-phone) {float:left;height: 100px; width: 100px;margin-right: 20px;}
+      text-align: center;
       img {
         max-height: 55px;
-        //@include media-query-max($media-phone) {margin-top: 10px;max-height: 80px; width: 100px;}
       }
     }
     .title{
       margin-top: 25px;
       margin-bottom: 5px;
       font-size: 1.2rem;
+      font-weight: $f-bold;
       color: $color-dark;
+      text-align: center;
 
       &.big{
         font-size: 2.5rem;
@@ -86,6 +90,14 @@ section {
       font-weight: $f-regular;
       line-height: 1.6;
       font-size: 16px;
+      p{
+        text-align: center;
+      }
+    }
+
+    .read-more {
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
 }
@@ -96,13 +108,14 @@ section {
   }
   .col {
     margin-bottom: 50px !important;
+    padding: 0 !important;
     @include media-query-max($media-custom) {width: 100% !important;}
   }
   .pricing-table {
     box-shadow: 2px 3px 10px $color-soft-dark;
     border-radius: 10px;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     margin: auto;
     &.table-large{margin-bottom: 60px;@include media-query-max($media-tablet) {display: none;}}
     &.table-small {

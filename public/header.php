@@ -34,8 +34,8 @@ function json_path($file)
         </ul>
         <ul class="left hide-on-med-and-down">
             <li><a href="/mopro.php">Acceuil</a></li>
-            <li>
-                <a href="/">Logiciels</a>
+            <li class="dropdown-container">
+                <a href="#!">Logiciels</a>
                 <ul class="dropdown">
                     <li><a href="#hello">Fonctionalités</a></li>
                     <li><a href="#hello">Sécurité et confidentialité</a></li>
@@ -45,8 +45,8 @@ function json_path($file)
             </li>
             <li><a href="/">Services</a></li>
             <li><a href="/">Tarifs</a></li>
-            <li>
-                <a href="/">Plus</a>
+            <li class="dropdown-container">
+                <a href="#!">Plus</a>
                 <ul class="dropdown">
                     <li><a href="#hello">A propos de nous</a></li>
                     <li><a href="#hello">Contactez-nous</a></li>
@@ -54,8 +54,17 @@ function json_path($file)
             </li>
         </ul>
         <div class="right auth">
-            <a class="button-border type2 button-purple" href="signin.php">Se connecter</a>
-            <a class="button-border type2" href="signup.php">S'inscrire</a>
+            <ul>
+                <li class="dropdown-container">
+                    <a href="#!">Admin</a>
+                    <ul class="dropdown drop-right">
+                        <li><a href="/page/gestion-de-projet">Audit et gestion de projet</a></li>
+                        <li><a href="/page/migration-et-reprise-de-donnees">Migration et reprise de données</a></li>
+                        <li><a href="/page/formation-des-equipes">Formation des équipes</a></li>
+                        <li><a href="/page/experts-comptables">Pour Experts-Comtables</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <!--<ul class="right member">
             <li><a href="#!" class="dropdown-trigger" data-target="user"><img src="/img/male.png" alt="avatar"/></a></li>
@@ -64,16 +73,23 @@ function json_path($file)
 </nav>
 <ul id="nav-mobile" class="sidenav">
     <img src="/img/itom.png" alt="MOPRO" class="nav-logo">
-    <li><a href="/">Home</a></li>
-    <li><a href="/">About</a></li>
-    <li><a href="/">Services</a></li>
-
-    <li>
-        <a href="/">Contactez nous</a>
+    <li><a href="/mopro.php">Acceuil</a></li>
+    <li class="dropdown-container">
+        <a href="#!">Logiciels</a>
         <ul class="dropdown">
-            <li><a href="#hello">Hello</a></li>
-            <li><a href="#hello">Hello</a></li>
-            <li><a href="#hello">Hello</a></li>
+            <li><a href="#hello">Fonctionalités</a></li>
+            <li><a href="#hello">Sécurité et confidentialité</a></li>
+            <li><a href="#hello">Demande de démo</a></li>
+            <li><a href="#hello">Documentation</a></li>
+        </ul>
+    </li>
+    <li><a href="/">Services</a></li>
+    <li><a href="/">Tarifs</a></li>
+    <li class="dropdown-container">
+        <a href="#!">Plus</a>
+        <ul class="dropdown">
+            <li><a href="#hello">A propos de nous</a></li>
+            <li><a href="#hello">Contactez-nous</a></li>
         </ul>
     </li>
 </ul>
