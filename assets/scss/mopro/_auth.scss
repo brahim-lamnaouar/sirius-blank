@@ -16,11 +16,7 @@
     width: 96% !important;
   }
   padding: 25px 40px 10px;
-
-
-
 }
-
 
 .verify-container, .auth-container{
   background: $color-white;
@@ -28,10 +24,12 @@
   overflow: hidden;
   margin: 75px auto 25px;
 
-
+  &.auth-mobile {
+    margin: 15px auto;
+  }
 
   .col > img {
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     @include media-query-max($media-tablet) {width: 50%;}
   }

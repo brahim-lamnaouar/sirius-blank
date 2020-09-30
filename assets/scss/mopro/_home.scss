@@ -2,6 +2,9 @@
 // Serviecs
 // =============================================================================
 
+body.mobile-container {
+  min-height: 100vh;
+}
 
 section {
   padding: 20px 25px;
@@ -107,7 +110,6 @@ section {
     @include media-query-min($media-tablet) {display: none;}
   }
   .col {
-    margin-bottom: 50px !important;
     padding: 0 !important;
     @include media-query-max($media-custom) {width: 100% !important;}
   }

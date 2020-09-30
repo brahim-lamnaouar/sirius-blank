@@ -71,6 +71,7 @@ function json_path($file)
         </ul>-->
     </div>
 </nav>
+
 <ul id="nav-mobile" class="sidenav">
     <img src="/img/itom.png" alt="MOPRO" class="nav-logo">
     <li><a href="/mopro.php">Acceuil</a></li>
